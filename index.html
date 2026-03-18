@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+​​<script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome@3/+esm"></script>
+
+
+<media-controller audio>
+  <audio
+    slot="media"
+    src="Luniz - I Got 5 On It.mp3"
+    crossorigin
+  ></audio>
+  <media-control-bar>
+    <media-seek-backward-button></media-seek-backward-button>
+    <media-play-button></media-play-button>
+    <media-seek-forward-button></media-seek-forward-button>
+    <media-time-display></media-time-display>
+    <media-time-range></media-time-range>
+    <media-duration-display></media-duration-display>
+    <media-mute-button></media-mute-button>
+  </media-control-bar>
+</media-controller>
+
+
+
+
+    <div class="player">
+
+
+        <h1>Reprodutor de Música</h1>
+
+        <!--1.cargar archivos
+            2. pista de audio
+            3.controles
+            4.barra de progreso 
+            5.time de la cancion-->
+
+
+       <input type="file" id="fileInput" accept="audio/mp4,audio/mpeg,audio/wav">
+       <input type="number">     
+
+
+       <audio id="audio"></audio>
+
+       <!--controles-->
+       <button id="playBtn">Play</button>
+
+       <input type="range" id="progressBar" value="0" min="0" max="100">
+
+       <p id="time">00:00</p>
+
+
+
+    </div>
+    
+
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
